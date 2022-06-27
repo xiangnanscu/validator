@@ -1,0 +1,23 @@
+{
+  "name": "@xiangnanscu/validator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.mjs",
+  "scripts": {
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node test.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiangnanscu/validator.git"
+  },
+  "author": "Nan Xiang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xiangnanscu/validator/issues"
+  },
+  "homepage": "https://github.com/xiangnanscu/validator#readme",
+  "devDependencies": {
+  }
+}
