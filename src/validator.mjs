@@ -299,7 +299,7 @@ export default {
   max: max,
   min: min,
   pattern: pattern,
-  forbidEmptyArray: nonEmptyArrayRequired,
+  nonEmptyArrayRequired: nonEmptyArrayRequired,
   integer: integer,
   url: url,
   encode: encode,

@@ -1,3 +1,3 @@
-import v from './index.mjs'
+import v from './src/validator.mjs'
 
-v.sfzh('51152319870713001X')
+v.sfzh('511523199901010011')

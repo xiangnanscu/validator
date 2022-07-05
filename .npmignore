@@ -1,8 +1,13 @@
-nginx.conf
-vite.config.js
+src
+public
 logs
 node_modules
-.vscode
 public
 tmp
+.vscode
+.github
 .npmrc
+index.html
+vite.config.js
+yarn.lock
+!src/validator.mjs
