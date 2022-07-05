@@ -271,7 +271,7 @@ function validateSfzh(s) {
 }
 function sfzh(v) {
   if (v.length !== 18) {
-    throw new Error("身份证号必须为18位");
+    throw new Error(`身份证号必须为18位，现在输入的是${v.length}位`);
   }
   v = v.toUpperCase();
   if (!/^\d{17}[\dX]$/.test(v)) {

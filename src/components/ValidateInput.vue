@@ -8,21 +8,23 @@ defineProps({
 
 const inputValue = ref('511523199901010011')
 const errorMsg = ref('')
-function validate(v) {
+function validate() {
   try {
-    Validator.sfzh(inputValue)
-    errorMsg.value = ""
+    Validator.sfzh(inputValue.value)
+    errorMsg.value = "test passed"
   } catch (error) {
     errorMsg.value = error.message
   }
 }
+function onInput(event) {
+  inputValue.value = event.target.value
+}
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
-  <input :value="inputValue" @input="inputValue=$event.target.value" />
+  <input :value="inputValue" @input="onInput" />
   <button type="button" @click="validate">validate</button>
-  <span v-if="errorMsg">error: {{ errorMsg }}</span>
+  <span v-if="errorMsg">{{ errorMsg }}</span>
 </template>
 
 <style scoped>

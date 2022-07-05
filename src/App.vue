@@ -1,12 +1,13 @@
 <script setup>
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
+import ValidateInput from './components/ValidateInput.vue'
+import packages from '../package.json'
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Validator" />
+  <h1>{{ packages.name }}-{{packages.version}}</h1>
+  <ValidateInput msg="Validator" />
 </template>
 
 <style>
