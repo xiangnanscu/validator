@@ -1,4 +1,3 @@
-src
 public
 logs
 node_modules
@@ -10,4 +9,5 @@ tmp
 index.html
 vite.config.js
 yarn.lock
+src/*
 !src/validator.mjs
