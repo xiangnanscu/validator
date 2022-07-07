@@ -1,6 +1,6 @@
 {
   "name": "@xiangnanscu/validator",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "validator",
   "main": "src/validator.mjs",
   "scripts": {
@@ -8,8 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "prerelease": "npm --no-git-tag-version version minor",
-    "release": "git add . && git commit -am 'release' && git push",
-    "push": "git add . && git commit -am 'push' && git push",
+    "release": "npm run push",
+    "push": "git add . && git commit -am \"$msg\" && git push",
     "test": "node test.mjs"
   },
   "repository": {
