@@ -6,7 +6,7 @@ import packages from '../package.json'
 </script>
 
 <template>
-  <h1>{{ packages.name }}-{{packages.version}}</h1>
+  <h1>[{{ packages.name }}-{{packages.version}}]</h1>
   <ValidateInput msg="Validator" />
 </template>
 
