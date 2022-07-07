@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "prerelease": "npm --no-git-tag-version version minor",
     "release": "npm run push",
-    "push": "git add . && git commit -am \"$msg\" && git push",
+    "push": "git add . && git commit -am \"${msg:-push}\" && git push",
     "test": "node test.mjs"
   },
   "repository": {
