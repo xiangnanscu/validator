@@ -8,8 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "prerelease": "npm --no-git-tag-version version minor",
-    "release": "npm run push",
-    "push": "git add . && git commit -am \"${msg:-push}\" && git push",
+    "release": "push_option=release npm run push",
+    "push": "git add . && git commit -am \"${msg:-push}\" && git push --push-option=${push_option:-nothing}",
     "test": "node test.mjs"
   },
   "repository": {
