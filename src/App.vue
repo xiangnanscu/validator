@@ -11,10 +11,11 @@ const githubRepoUrl = computed(() => {
     return `https://github.com/xiangnanscu/${packages.name}.git`
   }
 })
+const npmUrl = `https://www.npmjs.com/package/${packages.name}`
 </script>
 
 <template>
-  <h1><a :href="githubRepoUrl">{{ packages.name }}</a>-{{packages.version}}</h1>
+  <h1><a :href="githubRepoUrl">{{ packages.name }}</a>-<a :href="npmUrl">{{packages.version}}</a></h1>
   <MainPage msg="Validator" />
 </template>
 
