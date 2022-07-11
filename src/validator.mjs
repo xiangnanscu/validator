@@ -1,3 +1,7 @@
+class SkipValidateError extends Error {
+
+}
+
 function required(message) {
   message = message || "此项必填";
   function requiredValidator(v) {
@@ -290,30 +294,31 @@ function sfzh(v) {
 }
 
 export default {
-  required: required,
-  notRequired: notRequired,
-  string: string,
-  maxlength: maxlength,
-  minlength: minlength,
-  length: length,
-  max: max,
-  min: min,
-  pattern: pattern,
-  nonEmptyArrayRequired: nonEmptyArrayRequired,
-  integer: integer,
-  url: url,
-  encode: encode,
-  decode: decode,
-  number: number,
-  asIs: asIs,
-  date: date,
-  datetime: datetime,
-  time: time,
-  trim: trim,
-  deleteSpaces: deleteSpaces,
-  boolean: boolean,
-  booleanCn: booleanCn,
-  sfzh: sfzh,
-  validateSfzh: validateSfzh,
-  boolMap: boolMap,
+  SkipValidateError,
+  required,
+  notRequired,
+  string,
+  maxlength,
+  minlength,
+  length,
+  max,
+  min,
+  pattern,
+  nonEmptyArrayRequired,
+  integer,
+  url,
+  encode,
+  decode,
+  number,
+  asIs,
+  date,
+  datetime,
+  time,
+  trim,
+  deleteSpaces,
+  boolean,
+  booleanCn,
+  sfzh,
+  validateSfzh,
+  boolMap,
 };
